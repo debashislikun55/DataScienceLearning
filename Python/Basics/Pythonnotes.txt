@@ -1,0 +1,259 @@
+Types Of Operators ::: 
+
+1- Arithmetic Operator 
+2- Logical Operator 
+3- Bitwise Opeartor 
+4- Assignment Opeartor
+5- Relational/Comparisonal Operator
+6- Membership Opeartor ( Like ::  a in the list /// a not in list )
+7- Identity Operator (Like :: a is b //// a is not b ) 
+
+
+
+-- While loop is basically getting executed as long as the condition is true 
+
+--Break :: terminate the loop forcefully 
+-- continue :: Skips the current iteration and move to next iteration 
+
+
+
+List :: List is ordered , mutable ,  dynamic collection of items that can store heterogeneous data types .
+
+List Methods :::::
+
+append - To insert element at the end 
+insert - To insert element at a specific position
+pop - to remove the last element
+count - to count the elements occurence in the list 
+remove - to remove the first occurence of the element
+reverse - reverse the list 
+extend - add another list to the list 
+index - return the index of the first occurence of that element 
+clear - clear all elements
+len - number of elements in the list 
+
+List Slicing :: 
+
+It is the way to show the part of the string 
+
+[start:stop:step]
+
+
+List Comprehension :: 
+
+List comprehension in Python is a short way to make a new list by writing the loop and condition in a single line.
+
+
+
+
+Tuple :: Tuple is a ordered , immutable , dynamic collection of  heterogeneous elements .
+
+Packing of tuple :: putting multiple values at once into a tuple 
+
+Unpacking of tuple :: Breaking of tuple into multiple variables 
+
+
+
+
+
+
+Set :: 
+
+=> Set is the collection of unordered , mutable and unique items.
+
+There is a concept called Frozen Set 
+
+Frozen Set :: Set which can not be changed (immutable)
+
+Membership test :: To Test basically the element is present inside the set or not ( done by using  in / not in )
+
+
+
+Dictionary :: 
+
+=> Unordered set of collection using key value pair 
+=> Key should be unique 
+=> For getting the keys of dictionary :: dict.keys()
+=> for getting the values of dictionary :: dict.values()
+=> for getting the key-value pair items :: dict.items()
+
+Shallow copy v/s deep copy :: 
+
+Shallow Copy :: 
+
+=> It is like creating a new list . But both the new list and the existing list points to the same elements 
+   So any change in any of the list will affect the items in both the lists
+
+Deep Copy ::
+
+=> It is like creating a new list with completely new items inside .
+=> SO if you change anything in the copied list , it will not affect the existng list .
+
+
+=> Note :: 
+
+Integers are immutable → every time you “change” them, Python makes a new object.
+
+The same is true for strings, floats, tuples, booleans.
+
+=> Merging 2 dictionaries 
+
+   dict1.update(dict2)
+
+
+
+Function :::: 
+
+
+==> It is a resuable block of code that uses that performs a specific task 
+
+   
+   Positional Arguements :: 
+
+   => When you call the function , the values you pass  to the parameters are assigned to the parameters based on their location  
+
+   => *args accepts any number of positional arguements 
+
+
+   keyword Arguements ::
+
+   =>  Keyword arguements also called as named arguements 
+   =>  In this we pass the arguements by explicitly passing the parameter names 
+   =>  Basically  it takes in key value pair 
+
+   => **kwargs accepts any number of keyword arguements
+
+
+Lambda Function :: 
+
+   => Lambda function is a small , anonymous function that defined using lambda instead of the traditional def keyword.
+   => It is called as anonymous function because it doesnot require a formal name .
+   => lambda arguements : expression 
+   
+ 
+Map Function :: 
+
+   => Map Function is basically a inbuilt function in python which applies the function to each item 
+      in the iterable and returns the result in an iterator . 
+   => map(function , iterator)   
+
+Filter Function :: 
+
+   => Filter function filters the results from the iterator based on a particular condition
+   => filter(function , iterator)
+
+
+Packages & Modules :::
+
+=> Module is basically a single python file that contain related functions,classes etc.
+=> Package is a directory which contain multiple related modules and subpackages 
+=> We can use the import statement to use the package 
+=> It helps in code reusability 
+
+Library = > It is a collection of packages and modules that provides pre-writtem functionalities 
+
+
+
+
+OOPS ::: 
+
+
+=> Class is basically a blue print of object and contains all the properties and methods of the object .
+=> Object is a real world entity which is the instance of the class.
+
+=> Intance variable :: 
+
+   Instance variable is a variable which is defined inside each class to store the value 
+   and it is unique to each object(instance of the class)
+
+=> Instance Method :: 
+
+   Instance Method  is a function defined inside the class which operates using instance variable .
+   Generally it takes self as first parameter to refer to the object .
+
+Constructor ::
+
+   => A Constructor is a special method which is used to initialize the newly created object .
+   => __init__()
+
+
+Inheritance :: 
+
+=> Inheriting the properties and methods of parent class 
+
+    (1) Single Inheritance 
+    (2) Multiple Inheritance 
+
+
+PolyMorphism :: 
+
+=> PolyMorphism means many forms 
+   Means a single interface(Like  amethod ) behaves differently depending on the object 
+
+Encapsulation :: 
+
+=> It is a technique where data (attributes) and methods are combined into a single unit to perform the operation .
+=> It restricts the direct access to the data attributes and methods . 
+
+
+Magic Method :: 
+
+=> These are special methods in python declared with 2 underscore in both beginning and ending 
+   which can be overridden at anytime to perform any aritematic , logical and many other operations.
+
+   Ex:: 
+
+   __init__ , __str__
+
+
+Iterator :: 
+
+
+=> Iterator is an python object which is used to iterate the collection , one at a time 
+=> Memory Efficient and uses Lazy loading 
+=> Unlike loop it uses one element at a time , so that we dont have to load the 
+entire elements in the memory.
+
+
+Generator :: 
+
+=> generators are a special kind of functions that generate iterators . 
+   Instead of normal function with a return statement , it uses yield keyword to return the iterator .
+=> So it is memory efficient
+
+
+Closures::
+
+=> It is basically used to take function inside a function 
+   And the main function returns the sub function
+
+Decorators :: 
+
+=> Decorators are used to modify/alter functions/methods to alter the functionalitywiithout changing the actual function.
+
+
+Numpy and Pandas :: 
+
+=> Numpy is used for basically mathematical operations over nd arrays 
+=> Panda is basically used for data framing and data operations 
+   It has series(1D ) and dataframe(2D=> table like structure)
+
+
+Matplotlib :::
+
+=> It is a low level python library used for  data visualization and provided wide range of tools
+   to create  static, interactive and animated plots  .
+
+=> It is highly customizable and serves as foundation for many other visualization libraries.
+
+=>  Used for basic plots like line , bar , histogram and charts .
+
+=> Gives full control over plot elements .
+
+Seaborn :: 
+
+=> It is a high level python library made over matplotlib that focuses onn statistical data visualization.
+=> It simplifies the process of creating attractive and informative plots with less code and integrates well with
+   pandas data frames.
+=> Automatic applies colour pallets.
+=> Good for EDA.
